@@ -1,0 +1,5 @@
+alo
+bash
+dia
+internet
+unix

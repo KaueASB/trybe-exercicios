@@ -1,0 +1,6 @@
+abc
+true
+false
+brasil
+angola
+argentina
