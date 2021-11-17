@@ -236,7 +236,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 - [ ] 34-1: _[Projeto - Trybeer V2]()_
 
-## CiÃªncia da ComputaÃ§Ã£o
+## Ciência da Computação
 
 ##### Bloco 35: IntroduÃ§Ã£o - CiÃªncia da ComputaÃ§Ã£o
 
@@ -253,4 +253,5 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [ ] 36-4: _Entrada e SaÃ­da de dados_
 - [ ] 35-5: _[Projeto - Tech news]()_
 
-# [...]
+# [...]￼35-2: Arquitetura de redes
+
