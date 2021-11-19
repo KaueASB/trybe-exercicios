@@ -1,0 +1,9 @@
+var frutas = ["banana", "manga", "mamão"]
+var frutaPromocao = "maça"
+var precoNormal = 2
+var precoPromocao = 1
+var precoBanana = precoNormal
+var precoManga = precoNormal
+var precoMamão = precoNormal
+caixa1 = [
+
