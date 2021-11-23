@@ -22,6 +22,10 @@ div:nth-of-type(5){
     color:green;
 }
 
-h3{
-  font-style: italic;
+h3 {
+    background-color: aqua;
+}
+
+div:nth-of-type(2n+1) h3 {
+    font-style: italic;
 }
