@@ -22,3 +22,6 @@ div:nth-of-type(5){
     color:green;
 }
 
+h3{
+  font-style: italic;
+}
