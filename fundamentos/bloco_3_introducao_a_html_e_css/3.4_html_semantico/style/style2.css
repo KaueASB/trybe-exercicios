@@ -1,0 +1,22 @@
+.aside{
+    display: inline-block;
+    margin-left: 50%;
+}
+
+.aside table{
+    /* display: table-row; */
+    font-size: 20px;
+}
+
+.img-camarão{
+    display: inline-block;
+    width: 241px;
+    height: 210px;
+    margin-left: 50%;
+    
+}
+
+.titulo-camarao{
+    display: inline-block;
+ margin-left: 50%;
+}
