@@ -1,20 +1,18 @@
-/* .aside{
-    display: inline-block;
-    margin-left: 50%;
-} */
-/* 
-.aside table{
-    font-size: 20px;
-} */
-
-/* .img-camarão{
-    display: inline-block;
-    width: 241px;
-    height: 210px;
-    margin-left: 50%;
+body{
+    margin: 0;
 }
- */
-/* .titulo-camarao{
+
+.header {
+text-align: center;
+background-color: rgb(6, 151, 196);
+}
+
+nav ul{
+    margin:auto;
+}
+
+nav ul li {
     display: inline-block;
- margin-left: 50%;
-} */
+    list-style-type: none;
+    padding: 15px;
+}
