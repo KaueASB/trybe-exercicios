@@ -140,18 +140,18 @@
 let candidato = 'aprovado';
 
 switch (candidato) {
-  case "aprovado";
+  case "aprovado":
     console.log("Você foi aprovado");
     break;
 
-  case "lista";
+  case "lista":
     console.log("Você foi para a lista de espera");
     break;
 
-  case "reprovado";
+  case "reprovado":
     console.log("Você foi reprovado");
     break;
 
-  default;
+  default:
     console.log("não se aplica");
 }
