@@ -135,3 +135,23 @@
 
 // console.log(!null); // true
 // console.log(!undefined); // true
+
+// switch == case
+let candidato = 'aprovado';
+
+switch (candidato) {
+  case "aprovado";
+    console.log("Você foi aprovado");
+    break;
+
+  case "lista";
+    console.log("Você foi para a lista de espera");
+    break;
+
+  case "reprovado";
+    console.log("Você foi reprovado");
+    break;
+
+  default;
+    console.log("não se aplica");
+}
