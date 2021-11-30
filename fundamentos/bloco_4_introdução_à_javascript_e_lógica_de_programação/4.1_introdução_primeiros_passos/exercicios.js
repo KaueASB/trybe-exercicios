@@ -128,8 +128,11 @@
 
 const custo = 5
 const venda = 10
-let imposto
 
-if (custo < 0 || venda < 0) {
-  console.log('a');
+if (custo > 0 && venda > 0) {
+  const custoTotal = custo * 1.2;
+  const lucro = (venda * 1000) / custoTotal;
+  console.log(lucro);
+} else {
+  console.log ('valores não podem ser 0')  
 }
