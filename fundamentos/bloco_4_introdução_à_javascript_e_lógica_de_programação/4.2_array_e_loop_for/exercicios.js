@@ -76,9 +76,18 @@
 // console.log(menorNumero)
 
 // 8
-let numbers = [];
+// let numbers = [];
 
-for (i = 1; i <= 25; i += 1) {
-  numbers.push(i);
-}
-console.log(numbers)
+// for (i = 1; i <= 25; i += 1) {
+//   numbers.push(i);
+// }
+// console.log(numbers)
+
+// 9
+let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25]
+
+let = divisão
+
+for (i = 0; i < numbers.length; i += 1) {
+  console.log (numbers[i] / 2)
+};
