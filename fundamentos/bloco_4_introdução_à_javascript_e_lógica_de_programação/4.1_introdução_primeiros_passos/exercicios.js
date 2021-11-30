@@ -125,14 +125,31 @@
 // }
 
 // exercicio 10
+// const custo = 5
+// const venda = 10
 
-const custo = 5
-const venda = 10
+// if (custo > 0 && venda > 0) {
+//   const custoTotal = custo * 1.2;
+//   const lucro = (venda * 1000) / custoTotal;
+//   console.log(lucro);
+// } else {
+//   console.log ('valores não podem ser 0')  
+// }
 
-if (custo > 0 && venda > 0) {
-  const custoTotal = custo * 1.2;
-  const lucro = (venda * 1000) / custoTotal;
-  console.log(lucro);
-} else {
-  console.log ('valores não podem ser 0')  
-}
+// exercicio 11
+// const sBruto = 1500;
+// let ir = null;
+// let inss = null;
+
+// if (sBruto <= 1556,94) {
+//   inss = sBruto * 0.08
+// } else {
+//   console.log('sBruto não corresponde a aliquota')
+// }
+
+// const sBase = sBruto - inss;
+// console.log('Salário base é',sBase)
+
+// if (sBase <= 1903,98) {
+//   console.log('isento de ir')
+// }
