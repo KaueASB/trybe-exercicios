@@ -39,7 +39,7 @@
 
 // 5
 // let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
-// let maiorNumero = numbers[0]
+// let maiorNumero = 0
 
 // for (i = 0; i < numbers.length; i += 1) {
 //   if (numbers[i] > maiorNumero) {
@@ -47,3 +47,19 @@
 //   }
 // }
 // console.log(maiorNumero)
+
+// 6
+// let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+// let impar = 0
+
+// for (i = 0; i < numbers.length; i += 1) {
+//   if (numbers[i] % 2 == 1) {
+//     impar += 1;
+//   }
+// }
+
+// if (impar === 0) {
+//   console.log('nenhum valor impar encontrado')
+//  } else {
+//     console.log(impar);
+//   }
