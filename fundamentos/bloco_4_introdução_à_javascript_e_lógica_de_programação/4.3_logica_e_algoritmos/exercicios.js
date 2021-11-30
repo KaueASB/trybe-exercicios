@@ -1,6 +1,11 @@
-let qualquer = 0
-let array = [1, 2, 5, 8, 9]
+let number = 3
+let simbolo = '*'
+let iColumn = '';
 
-for (i = 0; i < array.length; i += 1) {
-  console.log(array[i])
+for (i = 0; i < number; i += 1) {
+  iColumn = iColumn + simbolo;
+}
+
+for (i = 0; i < number; i += 1) {
+  console.log (iColumn)
 }
