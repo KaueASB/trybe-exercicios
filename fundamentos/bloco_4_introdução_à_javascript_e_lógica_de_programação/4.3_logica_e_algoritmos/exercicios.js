@@ -1,34 +1,12 @@
-// exercicio 1
-// let number = 3
-// let asterisco = '*'
-// let colunas = '';
+// O fatorial é representado pelo sinal !
+// ! = 4 x 3 x 2 x 1 = 24
 
-// for (i = 0; i < number; i += 1) {
-//   colunas = colunas + asterisco;
-// }
+let fatorial = 10;
+let resultFator = 0;
+let aux = 0;
 
-// for (i = 0; i < number; i += 1) {
-//   console.log (colunas)
-// }
-
-/*  */
-
-// exercicio 2
-// let size = 5
-// let asterisco = '*'
-// let colunas = '';
-
-// for (i = 0; i <= size; i += 1) {
-//   console.log (colunas);
-//   colunas = colunas + asterisco;
-// }
-
-// exercicio 3
-let tamanho = 5
-let asterisco = '*'
-let colunas = '';
-
-for (i = 0; i <= size; i += 1) {
-  console.log (colunas);
-  colunas = colunas + asterisco;
+for (i = 0; i < fatorial; i += 1) {
+  aux += i;
+  resultFator = fatorial * aux;
 }
+console.log(resultFator);
