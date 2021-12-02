@@ -65,3 +65,14 @@ function maiorNum(primeiroNum, segundoNum) {
 console.log(maiorNum(10, 20)); // 20 é maior que 10
 console.log(maiorNum(2, -5)); // 2 é maior que -5
 console.log(maiorNum(1, 1)); // Os números são iguais
+
+// Reverter a posição dos itens de um array
+const array1 = ['one', 'two', 'three'];
+console.log('array1:', array1);
+
+const reversed = array1.reverse();
+console.log('reversed:', reversed);
+
+// Reverter a posição dos itens de uma string
+const word1 = 'arara';
+const wordReverse1 = word1.split('').reverse().join('');
