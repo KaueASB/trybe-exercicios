@@ -47,13 +47,60 @@
         - document.getElementById()
         - document.getElementsByClassName()
         - document.getElementsByTagName()
- Crie uma função que mude o texto na tag <p> para uma descrição de como você se vê daqui a 2 anos. (Não gaste tempo pensando no texto e sim realizando o exercício)
- Crie uma função que mude a cor do quadrado amarelo para o verde da Trybe (rgb(76,164,109)).
- Crie uma função que mude a cor do quadrado vermelho para branco.
- Crie uma função que corrija o texto da tag <h1>.
- Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
- Crie uma função que exiba o conteúdo de todas as tags <p> no console.
+        1. Crie uma função que mude o texto na tag <p> para uma descrição de como você se vê daqui a 2 anos. (Não gaste tempo pensando no texto e sim realizando o exercício)
+        2. Crie uma função que mude a cor do quadrado amarelo para o verde da Trybe (rgb(76,164,109)).
+        3. Crie uma função que mude a cor do quadrado vermelho para branco.
+        4. Crie uma função que corrija o texto da tag <h1>.
+        5. Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
+        6. Crie uma função que exiba o conteúdo de todas as tags <p> no console.
         */
+
+        // exercicio 1
+        function changeText () {
+          let paragrafo = document.getElementsByTagName('p')[1];
+          paragrafo.innerText = 'Estar empregado na área de desenvolvimento'
+        }
+        changeText();
+
+        // exercicio 2
+        function changeColorSquareYellow (){
+          let mainContent = document.querySelector('.main-content');
+          mainContent.style.backgroundColor = 'rgb(76,164,109)';
+        }
+        changeColorSquareYellow();
+
+        // exercicio 3
+        function changeColorSquareRed () {
+          let centerContent = document.getElementsByClassName('center-content')[0];
+          centerContent.style.backgroundColor = 'white';
+        }
+        changeColorSquareRed();
+
+        // exercicio 4
+        function changeTextH1 () {
+          let textH1 = document.getElementsByTagName('h1')[0];
+          textH1.innerText = 'Exercício 5.1 - JavaScript';
+        }
+        changeTextH1();
+
+        // exercicio 5
+        function paragraphUpperCase () {
+          let AllTagP = document.getElementsByTagName('p');
+          for (let i in AllTagP.length) {
+            AllTagP[i].innerText.toUpperCase();
+          }
+        }
+        paragraphUpperCase();
+
+        // exercicio 6
+        function exibirParagraph () {
+          let exibirPara = document.querySelectorAll('p');
+          for (let i = 0; i < exibirPara.length; i += 1) {
+            console.log((exibirPara[i]).innerText);
+          }
+        }
+        exibirParagraph();
+
     </script>
   </body>
 </html>
