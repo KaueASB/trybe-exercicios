@@ -49,7 +49,27 @@
       <input type="radio" name="type-house" id="apartment" value="Apartamento" required>Apartamento
     </form>
   </fieldset>
-  
+
+  <fieldset>
+    <!-- resumo curriculo -->
+    <label for="resumo-cv">Resumo do Curriculo</label>
+    <br>
+    <textarea name="resumo-cv" id="resumo-cv" maxlength="1000" required></textarea>
+    <br><br>
+    <!-- cargo -->
+    <label for="cargo">Cargo:</label>
+      <input type="text" name="cargo" id="cargo" placeholder="Digite Seu Cargo" required maxlength="40">
+      <br><br>
+    <!-- descrição do cartgo -->
+    <label for="descricao">Descrição do Cargo:</label>
+    <br>
+    <input type="text" name="descricao" id="descricao" required maxlength="500">
+    <br><br>
+    <!-- data de inicio -->
+    <label for="inicio">Data de Inicio</label>
+    <br>
+    <input type="date" name="data" id="data-inicio" required>
+  </fieldset>
   <script src="script2.js"></script>
 </body>
 </html>
