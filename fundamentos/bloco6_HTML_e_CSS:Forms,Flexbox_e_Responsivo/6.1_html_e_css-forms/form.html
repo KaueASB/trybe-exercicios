@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercicios Fomulário</title>
+  <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+  <header>
+    <h1>Fomulário</h1>
+    <p>Construa um formulário</p>
+  </header>
+  <div class="line-content"></div>
+  <fieldset>
+    <form action="">
+      <!-- nome -->
+      <label for="nome">Nome:</label>
+      <input type="text" name="nome" id="nome" placeholder="Digite Seu Nome" required maxlength="40">
+      <br><br>
+      <!-- e-mail -->
+      <label for="email">E-mail:</label>
+      <input type="email" name="nome" id="email" placeholder="Digite Seu E-mail" required maxlength="50">
+      <br><br>
+      <!-- cpf -->
+      <label for="cpf">CPF:</label>
+      <input type="text" name="cpf" id="cpf" placeholder="Digite Apenas Números" required maxlength="11">
+      <br><br>
+      <!-- endereço -->
+      <label for="endereco">Endereço:</label>
+      <input type="text" name="endereço" id="endereco" placeholder="Digite Seu Endereço" required maxlength="200">
+      <br><br>
+      <!-- cidade -->
+      <label for="cidade">Cidade:</label>
+      <input type="text" name="cidade" id="cidade" placeholder="Digite sua Cidade" required maxlength="28">
+      <br><br>
+      <!-- estado -->
+      <label for="estado">Estado:</label>
+      <select name="estado" id="estado" required>
+        <option selected>Selecione seu estado</option>
+      </select>
+      <br><br>
+      <!-- tipo de imóvel -->
+      <label for="type-house">Tipo do Imóvel</label>
+      <br>
+      <input type="radio" name="type-house" id="house" value="Casa" required>Casa
+      <br>
+      <input type="radio" name="type-house" id="apartment" value="Apartamento" required>Apartamento
+    </form>
+  </fieldset>
+  
+  <script src="script2.js"></script>
+</body>
+</html>
