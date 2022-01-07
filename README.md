@@ -33,7 +33,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 4-2: _JavaScript - Array e loop For_ :white_check_mark:
 - [x] 4-3: _JavaScript - Lógica de Programação e Algoritmos_ :white_check_mark:
 - [x] 4-4: _JavaScript - Objetos e funções_ :white_check_mark:
-- [x] 4-5: _[Projeto - Playground Functions]()_
+- [x] 4-5: _[Projeto - Playground Functions]()_:white_check_mark:
 
 ##### Bloco 5: Introdução - JavaScript - Projetos
 
