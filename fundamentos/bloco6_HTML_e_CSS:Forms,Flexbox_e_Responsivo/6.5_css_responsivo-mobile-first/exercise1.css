@@ -1,8 +1,8 @@
-/*
- * @see http://www.paulirish.com/2012/box-sizing-border-box-ftw/
- * apply a natural box layout model to all elements, but allowing components to change
- */
- html {
+/* 
+* @see http://www.paulirish.com/2012/box-sizing-border-box-ftw/
+* apply a natural box layout model to all elements, but allowing components to change */
+
+html {
   box-sizing: border-box;
 }
 
@@ -16,7 +16,7 @@ body {
 }
 
 article {
-
+  
 }
 
 h1 {
@@ -24,7 +24,7 @@ h1 {
 }
 
 h2 {
-
+  
 }
 
 img {
@@ -33,17 +33,21 @@ img {
 }
 
 main {
-
+  
 }
 
 section {
-
+  
 }
 
 figure {
-    margin: 0;
+  margin: 0;
 }
 
 figcaption {
   font-size: .8em;
+}
+
+@media screen and (min-width: 502) {
+  
 }
