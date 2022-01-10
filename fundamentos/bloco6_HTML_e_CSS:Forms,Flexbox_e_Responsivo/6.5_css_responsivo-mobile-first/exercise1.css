@@ -12,11 +12,11 @@ html {
 
 body {
   font-size: 20px;
-  margin: 5%;
+  margin: 4%;
 }
 
 article {
-  
+
 }
 
 h1 {
@@ -37,17 +37,30 @@ main {
 }
 
 section {
-  
+  display: block;
 }
 
 figure {
-  margin: 0;
+  margin: 2px;
 }
 
 figcaption {
   font-size: .8em;
 }
 
-@media screen and (min-width: 502) {
+@media screen and (min-width: 502px) {
+  section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  body {
+    background-color: aquamarine;
+    margin: 2%;
+  }
   
+  figure {
+    max-width: 45%;
+  }
 }
