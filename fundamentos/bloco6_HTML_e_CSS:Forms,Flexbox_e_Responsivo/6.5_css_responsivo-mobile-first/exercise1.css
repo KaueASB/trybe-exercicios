@@ -16,7 +16,7 @@ body {
 }
 
 article {
-
+  text-align: justify;
 }
 
 h1 {
@@ -24,7 +24,8 @@ h1 {
 }
 
 h2 {
-  
+  font-size: 1.5em;
+  margin: 1.5em 0 0 0;
 }
 
 img {
@@ -32,9 +33,9 @@ img {
   margin-bottom: 3%;
 }
 
-main {
+/* main {
   
-}
+} */
 
 section {
   display: block;
@@ -68,5 +69,11 @@ figcaption {
 @media screen and (min-width: 1000px) {
   figure {
     max-width: 25%;
+  }
+
+  body {
+    background-color: antiquewhite;
+    font-size: 1.5em;
+    max-width: 1300px;
   }
 }
