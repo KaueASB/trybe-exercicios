@@ -59,8 +59,14 @@ figcaption {
     background-color: aquamarine;
     margin: 2%;
   }
-  
+
   figure {
     max-width: 45%;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  figure {
+    max-width: 25%;
   }
 }
