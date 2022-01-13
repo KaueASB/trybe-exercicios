@@ -15,3 +15,8 @@ console.log(factorial(5));
 //exercicio 2
 const maiorWord = palavra => palavra.split(' ').sort((w1, w2) => w2.length - w1.length)[0];
 console.log(maiorWord('Antônio foi no banheiro e não sabemos o que aconteceu')) // retorna 'acmaiorWord
+
+//exercicio 3
+let clickCount = 0;
+let count = document.getElementById("count");
+const btn = document.getElementById('btn').addEventListener('click', () => count.innerHTML = clickCount +=1);
