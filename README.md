@@ -33,7 +33,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 4-2: _JavaScript - Array e loop For_ :white_check_mark:
 - [x] 4-3: _JavaScript - Lógica de Programação e Algoritmos_ :white_check_mark:
 - [x] 4-4: _JavaScript - Objetos e funções_ :white_check_mark:
-- [x] 4-5: _[Projeto - Playground Functions]()_:white_check_mark:
+- [x] 4-5: _[Projeto - Playground Functions](100%)_:white_check_mark:
 
 ##### Bloco 5: Introdução - JavaScript - Projetos
 
@@ -41,9 +41,9 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 5-2: _JavaScript - Trabalhando com elementos__ :white_check_mark:
 - [x] 5-3: _JavaScript - Eventos__ :white_check_mark:
 - [x] 5-4: _JavaScript - Web Storage__ :white_check_mark:
-- [ ] 5-5: _[Projeto - Meme Generator]()_
-- [x] 5-6: _[Projeto - Arte com Pixels](100%)__ :white_check_mark:
-- [ ] 5-7: _[Projeto - Lista de tarefas]()_
+- [x] 5-5: _[Projeto - Arte com Pixels](100%)__ :white_check_mark:
+- [x] 5-6: _[Projeto - Lista de tarefas](100%)_ :white_check_mark:
+- [ ] 5-7: _[Projeto - Meme Generator]()_
 - [ ] 5-7: _[Projeto - Adivinhe a Cor]()_
 - [ ] 5-7: _[Projeto - Carta Misteriosa]()_
 
@@ -53,14 +53,14 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 6-2: _Bibliotecas JavaScript e Frameworks CSS_ :white_check_mark:
 - [x] 6-3: _CSS Flexbox - Part 1_ :white_check_mark:
 - [x] 6-4: _CSS Flexbox - Part 2_ :white_check_mark:
-- [ ] 6-5: _CSS Responsivo - Mobile First_
-- [ ] 6-6: _[Projeto - Página inicial do Facebook]()_
+- [x] 6-5: _CSS Responsivo - Mobile First_ :white_check_mark:
+- [x] 6-6: _[Projeto - Trybewarts](100%)_ :white_check_mark:
 
 ##### Bloco 7: JavaScript ES6 & Testes Unitários
 
-- [ ] 7-1: _JavaScript ES6 - let, const, arrow functions e template literals_
-- [ ] 7-2: _JavaScript ES6 - Objects_
-- [ ] 7-3: _Testes unitários em JavaScript_
+- [x] 7-1: _JavaScript ES6 - let, const, arrow functions e template literals_ :white_check_mark:
+- [x] 7-2: _JavaScript ES6 - Objects_ :white_check_mark:
+- [x] 7-3: _Testes unitários em JavaScript_ :white_check_mark:
 - [ ] 7-4: _[Projeto - JavaScript Testes Unitários]()_
 
 ##### Bloco 8: JavaScript ES6
