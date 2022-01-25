@@ -12,5 +12,3 @@ const containsA = names.map((name) => {
 }).reduce((acc, curr) => acc + curr, 0);
 
 console.log(containsA);
-
-// .reduce((acc, item) => acc + item);
