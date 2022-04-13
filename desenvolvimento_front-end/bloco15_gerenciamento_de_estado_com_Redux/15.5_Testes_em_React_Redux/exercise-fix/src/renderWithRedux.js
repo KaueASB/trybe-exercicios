@@ -15,6 +15,8 @@ const renderWithRedux = (
 
 export default renderWithRedux;
 
+// =========================OUTRO MODO================================================= //
+
 // function renderWithReduxOutroModo(
 //  component,
 //  { initialState, store = createStore(combineReducers({ clickReducer }), initialState) } = {})
@@ -32,7 +34,20 @@ export default renderWithRedux;
 // createStore(reducer, config - midleawares) 
 // createStore(reducer, initial_state, config - midleawares)
 
-// ======================================================================== //
+//==========================OUTRO MODO=============================================== //
+
+// const createMockStore = (initialState) => (
+//   createStore(combineReducers({ reducer }), initialState, applyMiddleware(thunk))
+// );
+
+// const renderWithRedux = (
+//   component, { initialState, store = createMockStore(initialState) } = {},
+// ) => ({
+//   ...render(<Provider store={ store }>{component}</Provider>),
+//   store});
+
+
+// ===============================RENDER WITH ROUTER COM REDUX========================================= //
 
 // CASOS PARA USAR ROUTER COM REDUX DIRETO NOS TESTES //
 
