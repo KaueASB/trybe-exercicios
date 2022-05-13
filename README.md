@@ -89,40 +89,40 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 ##### Bloco 10: Introdução - React
 
 - [x] 10-1: _'Hello, world!' no React!_ :white_check_mark:
-- [x] 10-2: _Componentes React_
-- [x] 10-3: _[Projeto - Sistema Solar](100%)_
+- [x] 10-2: _Componentes React_ :white_check_mark:
+- [x] 10-3: _[Projeto - Sistema Solar](100%)_ :white_check_mark:
 
 ##### Bloco 11: Componentes com Estado, Eveno e Formulários com React
 
-- [x] 11-1: _Components com estado e eventos_
-- [x] 11-2: _Formulários no React_
+- [x] 11-1: _Components com estado e eventos_ :white_check_mark:
+- [x] 11-2: _Formulários no React_ :white_check_mark:
 - [x] 11-3: _[Projeto - Tryunfo](88%)_
 
 ##### Bloco 12: Ciclo de Vida de Componentes e React Router
 
-- [x] 12-1: _Ciclo de vida de componentes em React_
-- [x] 12-2: _React Router_
+- [x] 12-1: _Ciclo de vida de componentes em React_ :white_check_mark:
+- [x] 12-2: _React Router_ :white_check_mark:
 - [x] 12-3: _[Projeto - TrybeTybes](100%)_
 
 ##### Bloco 13: Metodologias Ágeis
 
-- [x] 13-1: _Metodologias Ágeis_
+- [x] 13-1: _Metodologias Ágeis_ :white_check_mark:
 - [x] 13-2: _[Projeto - Frontend Online Store](91%)_
 
 ##### Bloco 14: Testes automatizados com React Testing Library
 
-- [x] 14-1: _RTL - Primeiros Passos_
-- [x] 14-2: _RTL - Mocks e Inputs_
-- [x] 14-3: _RTL - Testando React Router_
+- [x] 14-1: _RTL - Primeiros Passos_ :white_check_mark:
+- [x] 14-2: _RTL - Mocks e Inputs_ :white_check_mark:
+- [x] 14-3: _RTL - Testando React Router_ :white_check_mark:
 - [x] 14-4: _[Projeto - Testes em React](100%)_
 
 ##### Bloco 15: Gerenciamento de estado com Redux
 
-- [x] 15-1: _Introdução ao Redux - o estado global da aplicação_
-- [x] 15-2: _Redux no React_
-- [x] 15-3: _Redux no React - Prática_
-- [x] 15-4: _Redux no React - Actions Assíncronas_
-- [x] 15-5: _Testes em React-Redux_
+- [x] 15-1: _Introdução ao Redux - o estado global da aplicação_ :white_check_mark:
+- [x] 15-2: _Redux no React_ :white_check_mark:
+- [x] 15-3: _Redux no React - Prática_ :white_check_mark:
+- [x] 15-4: _Redux no React - Actions Assíncronas_ :white_check_mark:
+- [x] 15-5: _Testes em React-Redux_ :white_check_mark:
 - [x] 15-6: _[Projeto - Trybe Wallet](90%)_
 
 ##### Bloco 16: Projeto Jogo de Trivia
@@ -131,9 +131,9 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ##### Bloco 17: Context API e React Hooks
 
-- [x] 17-1: _Context API do React_
-- [x] 17-2: _React Hooks - useState e useContext_
-- [x] 17-3: _React Hooks - useEffect e Hooks customizados_
+- [x] 17-1: _Context API do React_ :white_check_mark:
+- [x] 17-2: _React Hooks - useState e useContext_ :white_check_mark:
+- [x] 17-3: _React Hooks - useEffect e Hooks customizados_ :white_check_mark:
 - [x] 17-4: _[Projeto - StarWars Datatable com Context API e Hooks](83%)_
 
 ##### Bloco 18: Projeto Final de Front-end
@@ -144,8 +144,8 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ##### Bloco 19: Docker: Utilizando Containers
 
-- [x] 19-1: _Introdução - Back-end_
-- [x] 19-1: _Utilizando Containers - Docker_
+- [x] 19-1: _Introdução - Back-end_ :white_check_mark:
+- [x] 19-1: _Utilizando Containers - Docker_ :white_check_mark:
 - [ ] 19-2: _Manipulação e Criação de Imagens no Docker_
 - [ ] 19-3: _Orquestrando Containers com Docker Compose_
 - [ ] 19-4: _[Projeto - Docker Todo-List]()_
