@@ -18,3 +18,19 @@ services:
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: root123
+    volumes:
+      - db-mysql:/var/lib/mysql
+    networks:
+      - my-network
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8080:8080
+    networks:
+      - my-network
+volumes:
+  db-mysql:
+
+networks:
+  my-network:
