@@ -1,0 +1,16 @@
+- criar um contêiner que manterá um volume vinculado a essa nossa pasta local, para que qualquer alteração que fizermos em nosso HTML seja refletida no servidor http em nosso contêiner
+
+docker container run -d --name site-trybe2 -p 8881:80 -v "/home/kaue_alves/trybe-exercicios/desenvolvimento_back-end/bloco19_docker_utilizando_containers/19.3_orquestrando_containers_com_docker_compose/exec_fixation/meu-site:/usr/local/apache2/htdocs/" httpd:2.4
+
+=============
+
+- acessando o site pelo servidor apache
+
+http://localhost:8881/primeiro-teste.html
+
+=============
+
+- parar e excluir o container para ter certeza que o volume não foi excluído
+
+docker stop site-trybe2
+docker rm site-trybe2

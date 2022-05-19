@@ -1,0 +1,21 @@
+- instalando o docker-compose
+
+sudo curl -L "https://github.com/docker/compose/releases/download/1.25.5/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+
+=======================================
+
+- aplicar a permissão de execução ao binário
+
+sudo chmod +x /usr/local/bin/docker-compose
+
+=======================================
+
+- para validar a instalação
+
+docker-compose --version
+
+=======================================
+
+- guia oficial
+
+https://docs.docker.com/compose/install/#install-compose

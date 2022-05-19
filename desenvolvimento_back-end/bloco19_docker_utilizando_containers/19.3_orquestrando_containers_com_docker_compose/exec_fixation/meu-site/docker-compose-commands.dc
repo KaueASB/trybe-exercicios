@@ -1,0 +1,97 @@
+DOCKER-COMPOSE UP
+
+Ao rodar o comando docker-compose up, o Compose irá executar todos os contêineres especificados, baixando as imagens do repositório ou buildando localmente a partir do Dockerfile, de acordo com o que foi especificado no arquivo. Outro detalhe importante é que, nesse momento, além de executar os contêineres, o Compose irá criar os demais objetos especificados, como redes e volumes.
+  Da mesma forma como rodamos os contêineres no modo daemon, podemos fazê-lo no docker-compose up utilizando o parâmetro -d.
+
+Caso você tenha dado um nome diferente do padrão para o seu arquivo Compose, o parâmetro -f pode ser utilizado. Lembre-se que ele pertence ao comando docker-compose, sendo assim, ele precisa ser passado logo após o comando.
+  Por exemplo: docker-compose -f meu-arquivo-compose.yaml up ou docker-compose -f meu-arquivo-compose.yml stop. A sintaxe docker-compose <COMMAND> -f não funcionará.
+
+Se seu arquivo possuir o nome padrão docker-compose.yaml, não é necessário passar a essa flag, apenas lembre-se de estar no mesmo diretório que o arquivo.
+
+- Se você construiu localmente um arquivo docker-compose.yaml como o do exemplo que desenvolvemos até aqui, tente entrar no diretório em   que está o arquivo e executar os services utilizando o o comando:
+
+* docker-compose up
+
+============================================================
+
+- Podemos também usar este comando especificando um service.
+
+* docker-compose up <SERVICE NAME>
+
+============================================================
+
+- Se fizermos isso, o Compose irá incluir também suas dependências. Por exemplo, seguindo com nosso arquivo docker-compose.yaml de, se rodarmos o comando:
+
+* docker-compose backend
+
+============================================================
+
+- O Compose também irá criar e startar o database, que definimos no docker-compose.yaml como dependência do service backend, por meio do parâmetro depends_on.
+
+Caso você use o parâmetro build (que recebe o caminho do _Dockerfile da sua aplicação) ao invés de image, o _Compose irá buildar a imagem se isso não tiver sido feito anteriormente.
+
+Nesse sentido, outro parâmetro importante para conhecermos e muito usual é o --build. Perceba que, uma vez que a imagem seja buildada pelo Compose, ele utilizará essa imagem já criada na próxima vez que executarmos o up, sem atualizá-la.
+  Para forçamos um novo build, podemos utilizar a tag --build especificando um service ou não (dessa maneira ele irá tentar buildar todas as imagens possíveis novamente).
+
+* docker-compose up --build <SERVICE NAME>
+
+É muito comum utilizarmos o --build durante o desenvolvimento, pois quando fazemos alguma alteração e queremos refleti-la em nosso ambiente Compose, precisamos rebuildar a imagem do service alterado para que as atualizações sejam aplicadas ao ambiente.
+
+⚠️ Aviso: Lembre-se que para os comandos Compose, quando não especificado um arquivo com -f, a ferramenta irá buscar pelo arquivo docker-compose.yaml no diretório atual.
+
+============================================================
+
+DOCKER-COMPOSE DOWN
+
+Se quisermos parar nossos services, podemos utilizar o comando down. Com ele, todos os containers irão ser parados e os objetos criados pelo up, como as redes, por exemplo, serão removidos.
+
+* docker-compose down
+
+De olho na dica 👀: Não precisa se preocupar com remoção das redes e dos apontamentos que o comando causará, pois ao rodar o up novamente, tudo será recriado.
+
+============================================================
+
+PS
+
+- Semelhante ao comando com containers, podemos utilizar o parâmetro ps para listar os containers ativos. Porém, a grande diferença é que só serão listados os containers pertencentes ao arquivo do Compose referenciado (seja utilizando a flag -f ou utilizando o nome de arquivo padrão).
+
+* docker-compose ps
+
+============================================================
+
+STOP
+
+- Com o comando stop, conseguimos parar os services e, consequentemente, todos os containers relacionados. Diferentemente do down, ele não irá remover as redes e outros objetos criados pelo up.
+
+* docker-compose stop
+
+- Relembrando🧠: Podemos especificar um service a ser parado, para isso basta utilizarmos o nome que definimos no arquivo Compose.
+
+* docker-compose stop <SERVICE NAME>
+
+- De maneira semelhante ao que ocorre com o docker-compose up quando especificamos um service, ao especificarmos um service no o docker-compose stop, ele irá parar os serviços respeitando as dependências.
+  Em nosso exemplo, o backend será parado antes do database, ao executarmos o comando:
+
+* docker-compose stop backend
+
+============================================================
+
+START
+
+- O start funciona de maneira análoga ao stop. Com ele, podemos startar os services parados referentes àquele arquivo Compose.
+
+* docker-compose start
+
+- Também de maneira semelhante ao stop, podemos especificar um service para ser startado utilizando o nome dele.
+
+* docker-compose start <SERVICE NAME>
+
+============================================================
+
+LOGS
+
+Outro comando bem interessante é o logs. Com ele, podemos ver os logs de nossos services de maneira semelhante como fazemos unitariamente com os contêineres. Aqui, podemos especificar um service para visualizar os logs de todos os seus contêineres, ou ver todos os logs daquele ambiente, conforme arquivo do Compose.
+
+De maneira similar também ao comando para contêineres, podemos utilizar a flag -f ou --follow para acompanhar em tempo real as saídas dos contêineres e o --tail, em que podemos definir o número de linhas para ser exibidos a partir do final dos logs.
+
+* docker-compose logs -f --tail=100 <SERVICE NAME>

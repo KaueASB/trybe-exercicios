@@ -1,0 +1,40 @@
+- listar os networks existentes
+
+docker network ls
+
+  name      driver
+* bridge    bridge
+* host      host
+* none      null
+
+- bridge: Ao ser iniciado, todo contêiner é associado a uma rede. Caso essa rede não seja especificada explicitamente por nós, ele será associado à rede Bridge.
+Todos os contêineres associados a essa rede poderão se comunicar via protocolo TCP/IP e, caso soubermos o IP do contêiner que queremos conectar, podemos enviar tráfego a ele. Entretanto, os IPs de um contêiner são gerados automaticamente, e não é efetivo fazermos a conexão dessa forma, pois sempre que o contêiner for reiniciado, o IP poderá mudar.
+
+- host: Ao associarmos um contêiner a essa rede, ela passa a compartilhar toda stack de rede do host, ou seja, da máquina que roda o ambiente Docker.
+Anota aí 🖊: O uso desta rede é recomendada apenas para alguns serviços específicos, normalmente de infra, em que o contêiner precisa desse compartilhamento. Caso contrário, a recomendação é evitá-la.
+
+- none: Essa é uma rede que não possui nenhum driver associado. Dessa maneira, ao atribuir um contêiner a ela, o mesmo ficará isolado. Ela é útil quando temos contêineres que utilizam arquivos para a execução de comandos ou para se comunicar, por exemplo: um contêiner de backup ou que rode apenas um script localmente.
+
+=====================
+
+- criar nossa própria rede
+
+docker network create ( -d ou --driver) bridge (minha-rede)--> nome da rede
+
+=====================
+
+- Para vincularmos nosso contêiner à rede criada durante sua execução, basta utilizarmos o parâmetro --network
+
+docker container run -itd --network minha-rede --name meu-container busybox
+
+=====================
+
+- Para conectarmos um contêiner já criado, basta utilizarmos o parâmetro connect
+
+docker network connect minha-rede meu-container
+
+=====================
+
+- Para desconectá-lo, basta utilizar o parâmetro disconnect
+
+docker network disconnect minha-rede meu-container

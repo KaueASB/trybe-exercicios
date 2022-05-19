@@ -1,0 +1,180 @@
+version: "<VERSÃO-DO-COMPOSE>"
+services: # Definição dos containers
+  <MEU-CONTAINER-1>:
+    image: <MINHA-IMAGEM:VERSÃO> # Exemplo carregando uma imagem já _buildada_
+    # ... outras configurações
+  <MEU-CONTAINER-2>:
+    build: <CAMINHO-DO-DOCKERFILE> # Exemplo gerando uma build a partir de um `Dockerfile`
+    # ... outras configurações
+  <MEU-CONTAINER-N>:
+    image: <MINHA-IMAGEM:VERSÃO>
+    # ... outras configurações
+
+# ==============================================
+
+VERSION
+
+Todo arquivo docker-compose.yaml deve iniciar com a tag version. Desse modo, definimos qual versão será utilizada pelo compose para interpretar o arquivo, evitando que o docker-compose.yaml fique incompatível com versões mais recentes do compose.
+Você pode consultar as especificações de cada versão em https://docs.docker.com/compose/compose-file/compose-versioning/#versioning.
+Utilizaremos a versão 3 do compose. Sendo assim, nosso yaml iniciará da seguinte maneira:
+
+version: '3'
+
+# ===============================================
+
+SERVICES
+
+São os "tipos" dos contêineres que iremos rodar. Por exemplo: se vamos executar uma API, dizemos que ela é um service, porque com o Compose podemos escalar nossos apps em vários contêineres.
+Podemos, por exemplo, escalar nossa API em 4 contêineres diferentes, de forma que teremos um service que é a nossa API, porém com 4 contêineres em execução.
+Dessa forma, ao escrevermos nosso arquivo, temos que pensar em services, pois é assim que iremos defini-los.
+Exemplo: Imagine que queremos subir uma aplicação que contém um front-end, um back-end e um banco de dados. Dessa forma, não precisamos ainda pensar em quantos contêineres, podemos dizer que temos 3 services. Para definir nossos services, utilizamos o parâmetro services.
+Vamos ver como ficaria esse exemplo em nosso arquivo Compose:
+
+version: '3'
+services:
+  frontend::
+
+  backend:
+
+  database:
+
+Perceba no exemplo acima que demos um nome aos nosso serviços, porém não especificamos o que deverá ser executado.
+Relembrando🧠: Todo contêiner é criado a partir de uma imagem, sendo assim, precisamos especificá-las aos nossos serviços. Para isso, podemos utilizar dois comandos:
+
+- image para especificar uma imagem, seja local ou a ser baixada no Docker Hub;
+- build para apontar um diretório com o Dockerfile a partir do qual o Compose irá buildar a imagem para nós.
+
+
+No exemplo a seguir, construiremos as três partes da aplicação a partir dessas imagens disponíveis no Docker Hub (https://hub.docker.com/r/mjgargani/compose-example/tags). Portanto, usaremos sempre o comando image para especificar cada uma delas. Nosso docker-compose.yaml ficaria assim:
+
+version: '3'
+services:
+  frontend:
+    image: mjgargani/compose-example:frontend-trybe1.0
+  backend:
+    image: mjgargani/compose-example:backend-trybe1.0
+  database:
+    image: mjgargani/compose-example:database-trybe1.0
+
+Nosso arquivo irá funcionar como se estivéssemos executando três docker container run, um para cada serviço. Sendo assim, precisamos definir os demais parâmetros para os nossos contêineres.
+
+#  ===============================================
+
+RESTART
+
+No Docker existem as políticas de reinicialização, que servem para gerenciar se nossos contêineres reiniciarão automaticamente quando o Docker for reiniciado ou quando ocorrer algum erro, por exemplo.
+Este comando pode assumir quatro valores:
+- no: Este é o valor padrão assumido pelo Docker e define que o container não irá restartar automaticamente;
+
+- on-failure: Define que o container será reiniciado caso ocorra alguma falha, apontado pelo exit code diferente de zero;
+
+- always: Especifica que sempre que o serviço parar, seja por um falha ou porque ele finalizou sua execução, ele irá ser reiniciado;
+  Caso o contêiner seja interrompido manualmente, ele só será reiniciado depois que o daemon do Docker for reiniciado ou que o próprio contêiner seja reiniciado manualmente. Esse é um mecanismo pra evitar loops.
+
+- unless-stopped: Define que o contêiner sempre seja reiniciado, a menos que o Docker em si seja parado (manualmente ou não). No caso de ser interrompido, ele não reinicia nem se o daemon do Docker for reiniciado.
+  O daemon do Docker é um processo contínuo e que roda em segundo plano, gerenciando os contêineres Docker em um host.
+
+⚠️ Aviso: É importante utilizarmos o parâmetro em ambiente de produção, principalmente quando utilizarmos o Docker Compose, conforme é recomendado pelas especificações da própria documentação.
+Com a adição dessa configuração, nosso exemplo ficará assim:
+
+version: '3'
+services:
+  frontend:
+    image: mjgargani/compose-example:frontend-trybe1.0
+    restart: always
+  backend:
+    image: mjgargani/compose-example:backend-trybe1.0
+    restart: always
+  database:
+    image: mjgargani/compose-example:database-trybe1.0
+    restart: always
+
+# ============================================================
+
+PORTS
+
+No docker-compose.yaml temos o parâmetro ports que se comporta da mesma maneira que o -p do docker container run.
+No exemplo abaixo, queremos utilizar a porta 3000 para nosso front-end e a porta 3001 para nosso back-end, ambas fazendo bind para as respectivas portas no host. Dessa forma, nosso arquivo ficará assim:
+
+version: '3'
+services:
+  frontend:
+    image: mjgargani/compose-example:frontend-trybe1.0
+    restart: always
+    ports:
+      - 3000:3000
+  backend:
+    image: mjgargani/compose-example:backend-trybe1.0
+    restart: always
+    ports:
+      - 3001:3001
+  database:
+    image: mjgargani/compose-example:database-trybe1.0
+    restart: always
+
+Anota aí 🖊: O primeiro parâmetro é a porta do host(sua máquina) e o segundo a porta exposta no contêiner.
+
+# =============================================================
+
+ENVIRONMENT
+
+Outro parâmetro importante é o environment. Com ele, conseguimos configurar as variáveis de ambiente de nossos contêineres.
+Imagine que precisamos passar para nosso back-end uma parte da URL onde o banco de dados irá rodar, em uma variável chamada DB_HOST. Nosso exemplo ficaria assim:
+
+version: '3'
+services:
+  frontend:
+    image: mjgargani/compose-example:frontend-trybe1.0
+    restart: always
+    ports:
+      - 3000:3000
+  backend:
+    image: mjgargani/compose-example:backend-trybe1.0
+    restart: always
+    ports:
+      - 3001:3001
+    environment:
+      - DB_HOST=database
+  database:
+    image: mjgargani/compose-example:database-trybe1.0
+    restart: always
+
+Perceba que estamos passando a variável DB_HOST, que está em nosso host, para a variável "DBHOST" do _contêiner, onde o back-end está esperando por ela.
+  Lembre-se que mesmo tendo a env configurada em seu ambiente, ela só será passada ao contêiner se especificada aqui, da mesma maneira como fazemos com o parâmetro -e ou --env no comando run.
+
+Aqui também é possível utilizarmos variáveis de ambiente. Por exemplo, imagine que temos uma variável API_SECRET com uma secret. Por se tratar de um dado sensível, não podemos colocá-lo em um arquivo a ser versionado como parte de nossa aplicação, porém ainda temos que especificar ao Compose qual variável irá ser passada para qual contêiner.
+
+⚠️ Aviso: No contexto de Docker, secret é um dado que não deve ser transmitido por uma rede ou armazenado sem criptografia em um Dockerfile ou até mesmo no código fonte de sua aplicação, como uma senha ou uma chave privada SSH, por exemplo.
+
+Você pode dar uma olhada mais aprofundada em variáveis de ambiente usando docker-compose nesse link. (https://docs.docker.com/compose/environment-variables/)
+
+# =============================================================
+
+DEPENDS ON
+
+Outro parâmetro importante para garantir a ordem de inicialização e encerramento de services é o depends_on. Com ele, conseguimos estabelecer dependências entre os serviços.
+Para entendermos mais detalhadamente os comportamentos dessa flag, vamos voltar para a aplicação que estávamos construindo como exemplo:
+
+version: "3"
+services:
+  frontend:
+    image: mjgargani/compose-example:frontend-trybe1.0
+    restart: always
+    ports:
+      - 3000:3000
+    depends_on:
+      - "backend"
+  backend:
+    image: mjgargani/compose-example:backend-trybe1.0
+    restart: always
+    ports:
+      - 3001:3001
+    environment:
+      - DB_HOST=database
+    depends_on:
+      - "database"
+  database:
+    image: mjgargani/compose-example:database-trybe1.0
+    restart: always
+
+Nesse exemplo, os services serão iniciados respeitando a ordem das dependências, portanto, o database será iniciado antes do backend, que será startado antes do frontend.
