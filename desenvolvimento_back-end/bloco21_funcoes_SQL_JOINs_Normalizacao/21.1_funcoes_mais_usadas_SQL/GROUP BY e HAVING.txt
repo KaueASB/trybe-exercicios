@@ -1,0 +1,55 @@
+		EXIBINDO E FILTRANDO DADOS DE FORMA AGRUPADA COM GROUP BY E HAVING
+
+-----------------------------------------------------------------------------------------------------
+						GROUP BY
+
+Os resultados de uma query podem ser agrupados por uma ou mais colunas usando o GROUP BY, o que faz com que todos os registros que têm o mesmo valor para tais colunas sejam exibidos juntos. O GROUP BY também pode ser usado em conjunto com as funções de agregação que vimos anteriormente.
+O GROUP BY pode ser construído da seguinte forma:
+
+SELECT coluna(s) FROM tabela
+GROUP BY coluna(s);
+
+SELECT first_name FROM sakila.actor
+GROUP BY first_name;
+
+-- realizar a contagem após o agrupamento --
+select count(first_name) from (SELECT first_name, count(*) as count FROM actor
+GROUP BY first_name) actor;
+
+-----------------------------------------------------------------------------------------------------
+
+Tendo visto isso, agora vamos explorar como utilizar o GROUP BY em conjunto com as diversas funções de agregação que foram estudadas até aqui, por meio de alguns exemplos feitos com o nosso banco de dados sakila.
+
+-- Média de duração de filmes agrupados por classificação indicativa
+SELECT rating, AVG(length)
+FROM sakila.film
+GROUP BY rating;
+
+-- Valor mínimo de substituição dos filmes agrupados por classificação indicativa
+SELECT rating, MIN(replacement_cost)
+FROM sakila.film
+GROUP BY rating;
+
+-- Valor máximo de substituição dos filmes agrupados por classificação indicativa
+SELECT rating, MAX(replacement_cost)
+FROM sakila.film
+GROUP BY rating;
+
+-- Custo total de substituição de filmes agrupados por classificação indicativa
+SELECT rating, SUM(replacement_cost)
+FROM sakila.film
+GROUP by rating;
+
+select store_id, active, count(*) from customer group by store_id, active;
+select rating, avg(rental_duration) as `average` from film group by rating order by `average` desc;
+select district, count(*) from address group by district order by count(*) desc;
+
+-----------------------------------------------------------------------------------------------------
+						HAVING
+
+select district, count(*) from address group by district having count(*) > 5 order by count(*) desc;
+
+-----------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------
