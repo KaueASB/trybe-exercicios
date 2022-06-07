@@ -1,0 +1,79 @@
+				NORMALIZAÇÃO DO BANCO DE DADOS
+
+1ª Forma Normal
+
+Para iniciar a organização de um banco de dados, devemos nos atentar para a Primeira Forma Normal - base de todas as outras. Seus preceitos são:
+
+- Colunas devem possuir apenas um valor;
+- Valores em uma coluna devem ser do mesmo tipo de dados;
+- Cada coluna deve possuir um nome único;
+- A ordem dos dados registrados em uma tabela não deve afetar a integridade dos dados.
+
+=======================================================================================================
+
+2ª Forma Normal
+
+Para a Segunda Forma Normal, devemos atentar para o seguinte:
+
+- A tabela deve estar na 1ª Forma Normal;
+- A tabela não deve possuir dependências parciais.
+
+Uma dependência parcial pode ser considerada como qualquer coluna que não depende exclusivamente da chave primária da tabela para existir.
+
+exemplo, considere uma tabela Pessoa Estudantes que possui as seguintes colunas:
+
+id	nome	data_matricula	curso
+1	Samuel	2020-09-01	Física
+2	Joana	2020-08-15	Biologia
+3	Taís	2020-07-14	Contabilidade
+4	André	2020-06-12	Biologia
+
+A coluna curso pode ser considerada uma dependência parcial, pois é possível mover os valores dessa coluna para uma outra tabela. Os dados dessa tabela podem existir independente de existir uma pessoa estudante vinculada a esse curso ou não. Dessa forma, depois de normalizar, teríamos duas tabelas:
+
+Tabela Cursos
+
+id	nome
+1	Física
+2	Biologia
+3	Contabilidade
+
+Tabela Pessoas Estudantes
+
+id	nome	data_matricula	curso_id
+1	Samuel	2020-09-01	1
+2	Joana	2020-08-15	2
+3	Taís	2020-07-14	3
+4	André	2020-06-12	2
+
+Dessa forma, foi possível aplicar a Segunda Forma Normal na tabela Pessoas Estudantes. Lembre-se que a função da normalização não é necessariamente reduzir o número de colunas mas remover redundâncias e possíveis anomalias de inclusão, alteração ou remoção de dados.
+
+=======================================================================================================
+
+3ª Forma Normal
+
+Por fim, a Terceira Forma Normal estabelece que:
+
+- A tabela deve estar na 1ª e 2ª Formas Normais;
+- A tabela não deve conter atributos (colunas) que não sejam dependentes exclusivamente da PK (chave primária).
+
+livro_id	categoria_id	categoria	valor
+1			1	Romance	29,90
+2			2	Policial	34,90
+3			3	Ficção		19,90
+4			4	Ficção		44,90
+
+Observando a tabela acima, podemos notar que a coluna categoria depende da coluna categoria_id, que não é a PK da tabela.
+
+Quando um atributo (coluna) for dependente de outra coluna que não seja PK ou que não seja dependente unicamente da PK, como é o caso do exemplo acima, sua adequação à Terceira Forma Normal poderá se dar separando esse atributo em uma outra tabela. Dessa forma, ficaríamos com as tabelas assim:
+
+livro_id	categoria_id	valor
+1			1	29,90
+2			2	34,90
+3			3	19,90
+4			4	44,90
+
+categoria_id	categoria
+1		Romance
+2		Policial
+3		Ficção
+4		Comédia

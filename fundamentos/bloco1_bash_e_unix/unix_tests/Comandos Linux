@@ -1,0 +1,77 @@
+comandos linux
+
+pwd - mostra o diretório completo
+cd . - mostra o diretório atual
+cd .. - volta para o diretório anterior
+mkdir - cria um diretório 
+ls - lista os arquivos e diretórios
+ls -a - lista os arquivos e diretório incluindo os ocultos
+cd + nome diretório - muda o diretório
+cp - copiar um arquivo no diretório
+cat - abrir arquivo
+mv - mover arquivo
+rm - remover, apagar arquivo
+rmdir - remover, apagar diretório (desde que não tenha arquivos)
+rm -rf - remove mesmo tendo arquivo ( -rf remove sem confirmação)
+less - entra no modo de leitura de um arquivo
+head - traz as 10 primeiras linhas de um arquivo
+head -5 - traz as primeiras 5 linhas de um arquivo
+tail - traz as 10 últimas linhas de um arquivo
+tail -5 - traz as 5 últimas linhas de um arquivo
+/"palavra" - após o comado less para pesquisar uma palavra dentro do arquivo
+grep "palavra" "arquivo" - também pesquisa uma palavra dentro do arquivo (palavra tem que ser escrita exatamente como está no arquivo)
+grep -i "palavra" "arquivo" - também pesquisa uma palavra dentro do arquivo (desta maneira não importa se está maiúscula ou miníscula)
+grep -iv "palavra" "arquivo" - traz todos os valores que não corresponde com a busca
+grep -in "palavra" "arquivo" - mostra a linha que está a palavra no arquivo
+grep -ic "palavra" "arquivo" - mostra a quantidade de vezes que a determinada palavra está no arquivo
+wc "arquivo" - traz a quantidade de linhas, palavras e caracteres
+wc -w - traz apenas a qauntidade de palavras
+wc -l - traz apenas a quantidade de linhas
+wx -c - traz apenas a quantidade de caracteres
+
+caracteres coringas
+ls * - mostras os diretórios e o que contém sem precisar entrar em cada um
+ls ? - quando não lembra exatamente o nome do repositório
+man - traz o manual de qualquer comando
+whatis - mostra o que o comando faz
+apropos - te mostra o comando relacionado a plavra (exemplo apropos copy)
+sort - organizar em ordem alfabética
+who - mostra quem é o usuário no terminal
+>, >>. < - são comando de input e output
+ls -l - mostra informações além do ls
+r - significa que pode ler o arquivo (após o ls -l)
+w - significa qu pode alterar arquivo (após o ls -l)
+x - permite acessar o diretório ou arquivo pelo comando cd (após o ls -l)
+"-" no inicio da sequecia indica que é um arquivo comum (após o ls -l)
+"d" no inicio da sequencia indica que é um diretório (após o ls -l)
+chmod u - permite alterar permissões apenas para o usuário
+chmod g - para o grupo
+chmod o - para outros usuários
+chmod a - para todos os usuários
+inserindo "-" permite remover uma permissão, "+" permite adicionar, "=" deixar igual 
+há também o modo octal
+rwx = 111 ( 7 | Acesso Total )
+r-- = 100 ( 4 | Somente Leitura )
+-w- = 010 ( 2 | Somente Escrita )
+--x = 001 ( 1 | Somente Execução )
+rw- = 110 ( 6 | Somente Leitura e Escrita )
+r-x = 101 ( 5 | Somente Leitura e Execução )
+-wx = 011 ( 3 | Somente Escrita e Execução )
+--- = 000 ( 0 | Todos Acessos Negados )
+ps - verificar a lista de processos atual
+sleep - um processo
+sleep % - coloca em background
+ctrl + z - suspende o processo após executá-lo
+bg - colocar o processo em background
+jobs - lista todos os processos em eecução
+fg %(numero representado na lista) reativa o processo
+kill %(PID) encerra o processo
+kill -9 (PID) encerra o processo de maneira forçada
+find . -name - localizar por nome (.../diretório atual -name "palavra chave*")
+find . -date - por data
+find . -size - por tamanho
+find . -type f ou d - por tipo "d" diretório, "f" arquivo (.../diretório atual -type d ou f -name "palavra chave*"
+history - mostras o histórico de comandos realizados no terminal
+history | head - mostra os primeiros 10
+echo "palavra exemplo" - utilizado em scripts para mostrar uma mensagem na tela
+echo "palavra exemplo" > exemplo.txt - coloca a mensagem dentro de um arquivo

@@ -1,0 +1,5 @@
+kernel - responsável por fazer interação entre software e hardware. Ele funciona no momento que o pc é ligado.
+administra memoria, processos e arquivos
+
+shell - interface entre o SO, usuário e o kernel
+função ler, interpretar, executar e retornar o comando
