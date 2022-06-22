@@ -161,19 +161,19 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ##### Bloco 21: Funções SQL, JOINs e Normalização
 
-- [x] 21-1: _Funções mais usadas no SQL_
-- [x] 21-2: _Descomplicando JOINs_
-- [x] 21-3: _Transformando ideias em um modelo de banco de dados_
+- [x] 21-1: _Funções mais usadas no SQL_ :white_check_mark:
+- [x] 21-2: _Descomplicando JOINs_ :white_check_mark:
+- [x] 21-3: _Transformando ideias em um modelo de banco de dados_ :white_check_mark:
 - [x] 21-4: _[Projeto - One For All](100%)_
 
 ##### Bloco 22: Introdução ao desenvolvimento Web com Node.js
 
-- [x] 22-1: _NodeJS - Introdução && Um motor JavaScript_
-- [x] 22-1: _NodeJS - Um motor JavaScript_
-- [x] 22-2: _NodeJS - Fluxo Assíncrono_
-- [x] 22-3: _Mocha, Chai e Sinon - Testes de Back-end com Node.js_
-- [x] 22-4: _Express - HTTP com Node.js_
-- [x] 22-5: _Express - Middlewares_
+- [x] 22-1: _NodeJS - Introdução && Um motor JavaScript_ :white_check_mark:
+- [x] 22-1: _NodeJS - Um motor JavaScript_ :white_check_mark:
+- [x] 22-2: _NodeJS - Fluxo Assíncrono_ :white_check_mark:
+- [x] 22-3: _Mocha, Chai e Sinon - Testes de Back-end com Node.js_ :white_check_mark:
+- [x] 22-4: _Express - HTTP com Node.js_ :white_check_mark:
+- [x] 22-5: _Express - Middlewares_ :white_check_mark:
 - [x] 22-6: _[Projeto - Talker Manager](100&)_
 
 ##### Bloco 23: Node.js: Camada de Serviço e Arquitetura Rest e Restful
