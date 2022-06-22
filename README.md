@@ -159,25 +159,31 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 20-4: _Manipulando tabelas_ :white_check_mark:
 - [x] 20-5: _[Projeto - All For One](100%)_
 
-<!-- ##### Bloco 21: Bancos de dados relacionais
+##### Bloco 21: Funções SQL, JOINs e Normalização
 
-- [ ] 20-1: _FunÃ§Ãµes mais usadas no SQL_
-- [ ] 20-2: _Descomplicando JOINs e UNIONs_
-- [ ] 20-3: _Stored Routines & Subqueries_
-- [ ] 20-4: _[Projeto - Vocabulary Booster]()_ -->
+- [x] 21-1: _Funções mais usadas no SQL_
+- [x] 21-2: _Descomplicando JOINs_
+- [x] 21-3: _Transformando ideias em um modelo de banco de dados_
+- [x] 21-4: _[Projeto - One For All](100%)_
 
-<!-- ##### Bloco 22: Bancos de dados relacionais
+##### Bloco 22: Introdução ao desenvolvimento Web com Node.js
 
-- [ ] 21-1: _Transformando ideias em um modelo de banco de dados_
-- [ ] 21-2: _NormalizaÃ§Ã£o, Formas Normais e Dumps_
-- [ ] 21-2: _Transformando ideias em um modelo de banco de dados - Parte 2_
-- [ ] 21-3: _[Projeto - One For All]()_ -->
+- [x] 22-1: _NodeJS - Introdução && Um motor JavaScript_
+- [x] 22-1: _NodeJS - Um motor JavaScript_
+- [x] 22-2: _NodeJS - Fluxo Assíncrono_
+- [x] 22-3: _Mocha, Chai e Sinon - Testes de Back-end com Node.js_
+- [x] 22-4: _Express - HTTP com Node.js_
+- [x] 22-5: _Express - Middlewares_
+- [x] 22-6: _[Projeto - Talker Manager](100&)_
 
-<!-- ##### Bloco 23: IntroduÃ§Ã£o - NoSQL
+##### Bloco 23: Node.js: Camada de Serviço e Arquitetura Rest e Restful
 
-- [ ] 22-1: _MongoDB - IntroduÃ§Ã£o_
-- [ ] 22-2: _Filter Operators_
-- [ ] 22-3: _[Projeto - Data Flights]()_ -->
+- [ ] 22-1: _Introdução - Arquitetura de Software_
+- [ ] 22-1: _Arquitetura de Software - Camada de Model_
+- [ ] 22-2: _Arquitetura de Software - Camada de Controller e Service_
+- [ ] 22-3: _Arquitetura Web - Rest e Restful_
+- [ ] 22-4: _Arquitetura de Software - Testando as Camadas_
+- [ ] 22-5: _[Projeto - Store Manager]()_
 
 <!-- ##### Bloco 24: Updates
 
