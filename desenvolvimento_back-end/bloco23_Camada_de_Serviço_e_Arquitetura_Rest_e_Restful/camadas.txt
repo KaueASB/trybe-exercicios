@@ -1,0 +1,5 @@
+funcionalidade das camadas e ordem de acontecimentos
+
+controller = receber e tratar os dados da requisição
+service = define e aplica as regras de negócio
+Model = acessa o banco de dados

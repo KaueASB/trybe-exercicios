@@ -1,3 +1,0 @@
-Model = acessa o banco de dados
-service = define as regras de negócio
-controller = acho que manipula o service

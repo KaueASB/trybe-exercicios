@@ -1,0 +1,30 @@
+				CAMADA DE CONTROLLERS
+
+Você sabia que desde o primeiro dia em que iniciou seus estudos sobre Express, já vem usando o principal componente de sua camada de controllers? Isso mesmo, são os middlewares!
+
+A camada dos controllers é a primeira em uma API. É por meio dela que os dados da requisição do cliente serão recebidos e tratados, para depois serem passados para as próximas camadas.
+
+O controller recebe as requisições feitas à API e então consulta o service, enviando na resposta aquilo que o service deve retornar: uma mensagem de erro (em caso de falha) ou as informações pedidas (em caso de sucesso).				
+
+📝 Anote aí: ao se comunicar com o service, o controller não deve passar toda a request, ou seja, as informações devem ser extraídas e apenas o que for necessário para determinada ação deve ser transferido.
+				
+				CAMADAS DE SERVICES
+
+À medida que os projetos crescem, os modelos tornam-se cada vez maiores e mais complexos, pois passam a acumular mais regras de negócio. Por isso, é comum vermos uma nova camada sendo adicionada em projetos que exigem uma regra de negócio mais complexa e APIs.
+
+Essa camada é chamada de Services e fica situada entre as camadas de Controller e Model, sendo a responsável pela nossa regra de negócio.
+
+📝 Anote aí: quando adicionamos uma camada de Services, a camada Model fica com menos atribuições, ou seja, terá como responsabilidade somente o acesso a dados. Exemplificando: quebramos a camada de modelo em outras duas partes, a de Controle (vista anteriormente) e a de Serviço (que estamos aprendendo), cada uma com sua responsabilidade.
+
+O que uma boa camada de serviço precisa fazer?* 🤔
+
+Vejamos as atribuições:
+- Centralizar acesso a dados e funções externas.
+	- Exemplo: chamar um evento que dispara uma mensagem no Slack.
+- Abstrair regras de negócio complexas do seu modelo;
+
+Agora, o que uma boa camada de serviço não deve fazer? 🤔
+- Não deve ter nenhum tipo de informação sobre o acesso a camada de dados.
+	- Exemplo: não ter nenhuma query SQL.
+- Não deve receber nada relacionado ao HTTP, seja o request ou o response.
+- O controller deve mandar apenas o necessário para o service.
