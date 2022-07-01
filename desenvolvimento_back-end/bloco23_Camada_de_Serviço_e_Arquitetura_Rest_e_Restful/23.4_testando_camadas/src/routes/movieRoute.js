@@ -1,4 +1,5 @@
 const { Router } = require('express');
+const movieController = require('../controllers/movieController');
 
 const movieRoute = Router();
 
@@ -8,7 +9,7 @@ movieRoute.delete('/:id', (_req, _res) => { });
 
 movieRoute.put('/:id', (_req, _res) => { });
 
-movieRoute.post('/', (_req, _res) => { });
+movieRoute.post('/', movieController.create);
 
 movieRoute.get('/', (_req, res) => { res.send('to aqui'); });
 

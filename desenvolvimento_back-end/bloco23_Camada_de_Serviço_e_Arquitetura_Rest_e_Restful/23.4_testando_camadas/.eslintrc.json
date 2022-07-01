@@ -1,6 +1,10 @@
 {
   "extends": "trybe-backend",
   "rules": {
-    "mocha/no-mocha-arrows": "off"
+    "mocha/no-mocha-arrows": "off", 
+    "quotes": [
+      "error",
+      "single"
+    ]
   }
 }
