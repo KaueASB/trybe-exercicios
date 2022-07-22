@@ -1,0 +1,13 @@
+# heroku.yeml será nosso orquestrador de containers, utilizado em ambientes de produção do Heroku.
+# O arquivo heroku.yml possui quatro níveis superiores: setup, build, release, run.
+
+# setup: Especifica os complementos e variáveis de configuração a serem criados durante o provisionamento do aplicativo - Documentação;
+# build: Especifica o Dockerfile que será utilizado para construção da imagem - Documentação;
+# release: Especifica as tarefas da fase de liberação a serem executadas - Documentação;
+# run: Especifica os tipos de processos e os comandos a serem executados para cada um - Documentação.
+
+build:
+  docker:
+    web: Dockerfile
+run:
+  web: node index.js
