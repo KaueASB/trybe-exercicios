@@ -47,9 +47,9 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 5-4: _JavaScript - Web Storage_ :white_check_mark:
 - [x] 5-5: _[Projeto - Arte com Pixels](100%)_
 - [x] 5-6: _[Projeto - Lista de tarefas](100%)_
-- [ ] 5-7: _[Projeto - Meme Generator]()_
-- [ ] 5-7: _[Projeto - Adivinhe a Cor]()_
-- [ ] 5-7: _[Projeto - Carta Misteriosa]()_
+- [x] 5-7: _[Projeto - Meme Generator]()_
+- [x] 5-7: _[Projeto - Adivinhe a Cor]()_
+- [x] 5-7: _[Projeto - Carta Misteriosa]()_
 
 ##### Bloco 6: HTML & CSS: Forms, Flexbox e Responsivo
 
@@ -174,99 +174,102 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 22-3: _Mocha, Chai e Sinon - Testes de Back-end com Node.js_ :white_check_mark:
 - [x] 22-4: _Express - HTTP com Node.js_ :white_check_mark:
 - [x] 22-5: _Express - Middlewares_ :white_check_mark:
-- [x] 22-6: _[Projeto - Talker Manager](100&)_
+- [x] 22-6: _[Projeto - Talker Manager](100%)_
 
 ##### Bloco 23: Node.js: Camada de Serviço e Arquitetura Rest e Restful
 
-- [ ] 22-1: _Introdução - Arquitetura de Software_
-- [ ] 22-1: _Arquitetura de Software - Camada de Model_
-- [ ] 22-2: _Arquitetura de Software - Camada de Controller e Service_
-- [ ] 22-3: _Arquitetura Web - Rest e Restful_
-- [ ] 22-4: _Arquitetura de Software - Testando as Camadas_
-- [ ] 22-5: _[Projeto - Store Manager]()_
+- [x] 22-1: _Introdução - Arquitetura de Software_ :white_check_mark:
+- [x] 22-1: _Arquitetura de Software - Camada de Model_ :white_check_mark:
+- [x] 22-2: _Arquitetura de Software - Camada de Controller e Service_ :white_check_mark:
+- [x] 22-3: _Arquitetura Web - Rest e Restful_ :white_check_mark:
+- [x] 22-4: _Arquitetura de Software - Testando as Camadas_ :white_check_mark:
+- [x] 22-5: _[Projeto - Store Manager](100%)_
 
-<!-- ##### Bloco 24: Updates
+##### Bloco 24: Node.js: ORM e Autenticação
 
-- [ ] 23-1: _Updates Simples_
-- [ ] 23-2: _Updates Complexos - Arrays - Parte 1_
-- [ ] 23-3: _Updates Complexos - Arrays - Parte 2_
-- [ ] 23-4: _[Projeto - Commerce]()_ -->
+- [x] 24-1: _Introdução - Node.js: ORM e Autenticação_  :white_check_mark:
+- [x] 24-1: _ORM - Interface da aplicação com o banco de dados_ :white_check_mark:
+- [x] 24-2: _ORM - Associations_ :white_check_mark:
+- [x] 24-3: _JWT - (JSON Web Token)_ :white_check_mark:
+- [x] 24-4: _Testando APIs com Testes de Integração_ :white_check_mark:
+- [x] 24-5: _[Projeto - API de Blogs](100%)_
 
-<!-- ##### Bloco 25: Aggregation Framework
+##### Bloco 25: Deployment
 
-- [ ] 24-1: _Aggregation Framework - Part 1_
-- [ ] 24-2: _Aggregation Framework - Part 2_
-- [ ] 24-3: _[Projeto - Aggregations]()_ -->
+- [x] 25-1: _Introdução - Deploy_ :white_check_mark:
+- [x] 25-1: _Infraestrutura - Deploy com Heroku_ :white_check_mark:
+- [x] 25-2: _Deploy Docker & Heroku_ :white_check_mark:
+- [x] 25-3: _[Projeto - Stranger Things](100%)_
 
-<!-- ##### Bloco 26: Intro - NodeJS
+##### Bloco 26: TypeScript
 
-- [ ] 25-1: _NodeJS - IntroduÃ§Ã£o_
-- [ ] 25-2: _NodeJS - Fluxo AssÃ­ncrono_
-- [ ] 25-3: _NodeJS - Arquitetura_
-- [ ] 25-4: _[Projeto - A CLI of Ice and Fire]()_ -->
+- [x] 26-1: _Introdução ao TypeScript_ :white_check_mark:
+- [x] 26-2: _Tipagem Estática e Generics_ :white_check_mark:
+- [x] 26-3: _Express com TypeScript_ :white_check_mark:
+- [x] 26-4: _[Projeto - Trybe Smith](100%)_
 
 <!-- ##### Bloco 27: NodeJS
 
-- [ ] 26-1: _Express: HTTP com Node.js_
-- [ ] 26-2: _Arquitetura de Software - IntroduÃ§Ã£o ao MVC_
-- [ ] 26-3: _[Projeto - Cookmaster]()_ -->
+- [x] 27-1: _Express: HTTP com Node.js_
+- [x] 27-2: _Arquitetura de Software - IntroduÃ§Ã£o ao MVC_
+- [x] 27-3: _[Projeto - Cookmaster]()_ -->
 
 <!-- ##### Bloco 28: NodeJS
 
-- [ ] 27-1: _Arquitetura de Software - Camada de ServiÃ§o_
-- [ ] 27-2: _Arquitetura web - Rest e Restful_
-- [ ] 27-3: _[Projeto - Store Manager]()_ -->
+- [x] 28-1: _Arquitetura de Software - Camada de ServiÃ§o_
+- [x] 28-2: _Arquitetura web - Rest e Restful_
+- [x] 28-3: _[Projeto - Store Manager]()_ -->
 
 <!-- ##### Bloco 29: NodeJS
 
-- [ ] 28-1: _NodeJS - JWT - (JSON Web Token)_
-- [ ] 28-2: _NodeJS - Upload de arquivos com Multer_
-- [ ] 28-3: _[Projeto - Cookmaster V2]()_ -->
+- [x] 29-1: _NodeJS - JWT - (JSON Web Token)_
+- [x] 29-2: _NodeJS - Upload de arquivos com Multer_
+- [x] 29-3: _[Projeto - Cookmaster V2]()_ -->
 
 <!-- ##### Bloco 30: IntroduÃ§Ã£o - Deploy
 
-- [ ] 29-1: _Infraestrutura - Deploy com Heroku_
-- [ ] 29-2: _Deploy - Gerenciadores de Processos_
-- [ ] 29-3: _[Projeto - Stranger Things]()_ -->
+- [x] 30-1: _Infraestrutura - Deploy com Heroku_
+- [x] 30-2: _Deploy - Gerenciadores de Processos_
+- [x] 30-3: _[Projeto - Stranger Things]()_ -->
 
 <!-- ##### Bloco 31: Projeto
 
-- [ ] 30-1: _[Projeto - Trybeer]()_ -->
+- [x] 31-1: _[Projeto - Trybeer]()_ -->
 
 <!-- ##### Bloco 32: Arquitetura de Software
 
-- [ ] 31-1: _Arquitetura - PrincÃ­pios SOLID_
-- [ ] 31-2: _ORM - Interface da aplicaÃ§Ã£o com o banco de dados_
-- [ ] 31-3: _Arquitetura de Software - DDD_
-- [ ] 31-4: _Boas prÃ¡ticas na escrita de testes_
-- [ ] 31-3: _[Projeto - API de Blogs]()_ -->
+- [x] 32-1: _Arquitetura - PrincÃ­pios SOLID_
+- [x] 32-2: _ORM - Interface da aplicaÃ§Ã£o com o banco de dados_
+- [x] 32-3: _Arquitetura de Software - DDD_
+- [x] 32-4: _Boas prÃ¡ticas na escrita de testes_
+- [x] 32-3: _[Projeto - API de Blogs]()_ -->
 
 <!-- ##### Bloco 33: Sockets
 
-- [ ] 32-1: _Sockets - TCP/UDP & NET_
-- [ ] 32-2: _Sockets - Socket.io_
-- [ ] 32-3: _[Projeto - Webchat]()_ -->
+- [x] 33-1: _Sockets - TCP/UDP & NET_
+- [x] 33-2: _Sockets - Socket.io_
+- [x] 33-3: _[Projeto - Webchat]()_ -->
 
 <!-- ##### Bloco 34: Projeto
 
-- [ ] 33-1: _[Projeto - Trybeer V2]()_ -->
+- [x] 34-1: _[Projeto - Trybeer V2]()_ -->
 
 <!-- ## Ciência da Computação
 
 ##### Bloco 35: IntroduÃ§Ã£o - CiÃªncia da ComputaÃ§Ã£o
 
-- [ ] 34-1: _Arquitetura de Computadores_
-- [ ] 34-2: _Arquitetura de redes_
-- [ ] 34-3: _Redes de computadores, ferramentas e seguranÃ§a_
-- [ ] 34-4: _[Projeto - Explorando os protocolos]()_ -->
+- [x] 35-1: _Arquitetura de Computadores_
+- [x] 35-2: _Arquitetura de redes_
+- [x] 35-3: _Redes de computadores, ferramentas e seguranÃ§a_
+- [x] 35-4: _[Projeto - Explorando os protocolos]()_ -->
 
 <!-- ##### Bloco 36: Python
 
-- [ ] 35-1: _Aprendendo Python_
-- [ ] 35-2: _Testes e ExceÃ§Ãµes_
-- [ ] 35-3: _Entrada e SaÃ­da de dados_
-- [ ] 36-4: _Entrada e SaÃ­da de dados_
-- [ ] 35-5: _[Projeto - Tech news]()_ -->
+- [x] 36-1: _Aprendendo Python_
+- [x] 36-2: _Testes e ExceÃ§Ãµes_
+- [x] 36-3: _Entrada e SaÃ­da de dados_
+- [x] 36-4: _Entrada e SaÃ­da de dados_
+- [x] 36-5: _[Projeto - Tech news]()_ -->
 
 <!-- # [...]￼35-2: Arquitetura de redes -->
 
