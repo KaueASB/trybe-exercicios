@@ -1,0 +1,14 @@
+{
+  "name": "29.1_intro_nosql_e_mongodb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "",
+    "compose:up:dev": "docker-compose down && docker-compose up -d ",
+    "compose:down:dev": "docker-compose down"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
