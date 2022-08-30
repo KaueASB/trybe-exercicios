@@ -1,0 +1,55 @@
+ use("aula_29_2")
+// db.filmes.find()
+// db.filmes.find({'avaliacao.bom': {$lt: 5}})
+// db.filmes.find({ano: {$lte: 2000}})
+// db.filmes.find({ano: {$gt: 1993}})
+// db.filmes.find({ano: {$gte: 1993}}).sort({ano: 1})
+// db.filmes.find({ano: {$in: [1993, 2000]}}).sort({ano: 1})
+// db.filmes.find({ano: {$gte: 1993, $lte: 2000}}).sort({ano: 1})
+// db.filmes.find({ano: {$eq: 1993}}) ou db.filmes.find({ano: 1993})
+// db.filmes.find({'avaliacao.bom': 7})
+// db.filmes.find({'avaliacao.ruim': {$ne: 8}})
+// db.filmes.find({ano: {$in: [2001, 1968, 1995]}}).sort({ano: 1})
+// db.filmes.find({ano: {$nin: [2013, 2008]}}).sort({ano: 1})
+// db.filmes.find({
+//   $and: [
+//     {ano: {$gt: 2000}},
+//     {'avaliacao.bom': {$gte: 8}}
+//   ]
+// }).sort({ano: 1})
+// db.filmes.find({ano: {$gt: 2000}, 'avaliacao.bom': {$gte: 8}}).sort({ano: 1})
+// db.filmes.find({
+//   $or: [
+//     {ano: {$gt: 2000}},
+//     {'avaliacao.bom': {$gte: 8}}
+//   ]
+// }).sort({ano: 1})
+// db.filmes.find({diretor: {$not: {$eq: 'Michael Bay'}}})
+// db.filmes.find({diretor: {$ne: 'Michael Bay'}})
+
+// db.filmes.find({
+//   $nor:[
+//     {diretor: 'Michael Bay'},
+//     {'avaliacao.ruim': 10},
+//   ]
+// }, {_id: 0, diretor: 1, 'avaliacao.ruim': 1})
+
+// db.filmes.find({
+//   $nor:[
+//     {diretor: 'Michael Bay'},
+//     {'avaliacao.bom': {$gt: 7}},
+//   ]
+// }, {_id: 0, diretor: 1, 'avaliacao.bom': 1})
+
+// db.filmes.find({
+//   $nor:[
+//     {ano: {$gt: 2000}},
+//     {'avaliacao.ruim': {$gt: 6}}
+//   ]
+// }, {_id: 0, ano: 1, 'avaliacao.ruim': 1}).sort({ano: 1})
+
+// sort composto na versão 6
+// db.filmes.find().sort({ano: -1, titulo: 1})
+
+// sort composto antes da versão 6
+// db.filmes.find().sort({ ano: -1 }, { titulo: 1 })
