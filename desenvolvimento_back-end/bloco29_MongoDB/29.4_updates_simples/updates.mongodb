@@ -126,3 +126,30 @@ use ('conteudo_trybe');
 //     $max: { dateExpired: new Date("2019-10-02") }
 //   }
 // );
+
+// db.students.insertOne(
+//    {
+//       "_id" : 5,
+//       "quizzes" : [
+//          { "wk": 1, "score" : 10 },
+//          { "wk": 2, "score" : 8 },
+//          { "wk": 3, "score" : 5 },
+//          { "wk": 4, "score" : 6 }
+//       ]
+//    }
+// )
+
+// db.students.updateOne(
+//    { _id: 5 },
+//    {
+//      $push: {
+//        quizzes: {
+//           $each: [ { wk: 5, score: 8 }, { wk: 6, score: 7 }, { wk: 7, score: 6 } ],
+//           $sort: { score: -1 },
+//           $slice: 3
+//        }
+//      }
+//    }
+// )
+
+db.students.find()
