@@ -14,8 +14,9 @@ for restaurant in restaurants:
 print(filtered_restaurants)  # imprime a lista de restaurantes, sem o B e D
 
 
-# Anota ai ✏️: 
-# Em alguns casos, podemos ainda querer percorrer uma sequência numérica, e para isto iteramos sobre a estrutura de dados range.
+# Anota ai ✏️:
+# Em alguns casos, podemos ainda querer percorrer uma sequência numérica,
+# e para isto iteramos sobre a estrutura de dados range.
 
 for index in range(5):
     print(index)
